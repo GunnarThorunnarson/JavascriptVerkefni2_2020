@@ -1,5 +1,7 @@
 1:Afhverju er getElementById() flj?tleglegasta a?fer?in?
+getElementByldId is faster bacuse call direct to Javascript engine. jQuery wrapper normalizes DOM manipulation.
 2:Hver er munurinn ? static og live NodeList?
+Different between the NodeList is that ones is live and one is static become visible when you add other list item to ul element.
 3:Hver er munurinn ? true og false ? AddEventListener?
    elem.addEventListener("click", handlerFunction, true);
    elem.addEventListener("click", handlerFunction, false);
