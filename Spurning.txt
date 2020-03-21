@@ -1,0 +1,19 @@
+1:Afhverju er getElementById() flj?tleglegasta a?fer?in?
+2:Hver er munurinn ? static og live NodeList?
+3:Hver er munurinn ? true og false ? AddEventListener?
+   elem.addEventListener("click", handlerFunction, true);
+   elem.addEventListener("click", handlerFunction, false);
+
+4:this v?sar ? Event listener ? html element en ekki ? object. ?? getur nota? bind() til a? breyta ?v?. Leystu eftirfarandi k??ad?mi me? notkun ? bind() til a? birta ? console “My name is Sam“ en ekki undefined.
+let Person = {
+  
+  name: 'Sam',
+  
+  sayName: function(){
+    
+     console.log('My name is '+ this.name);
+  
+  }
+
+};
+buttonEl.addEventListener('click', Person.sayName);
