@@ -4,3 +4,10 @@ var elements = document.getElementsByClassName("changecolor");
         elements[i].style.color = "red";
     }
 };
+
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").text("paragraph");
+  });
+});
