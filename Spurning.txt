@@ -1,12 +1,16 @@
 1:Afhverju er getElementById() flj?tleglegasta a?fer?in?
 getElementByldId is faster bacuse call direct to Javascript engine. jQuery wrapper normalizes DOM manipulation.
+
 2:Hver er munurinn ? static og live NodeList?
 Different between the NodeList is that ones is live and one is static become visible when you add other list item to ul element.
+
 3:Hver er munurinn ? true og false ? AddEventListener?
    elem.addEventListener("click", handlerFunction, true);
    elem.addEventListener("click", handlerFunction, false);
 true and false in addEventListener is Boolean that specifies whether the event needs to be captured or not, useCapture: Boolean that specifies whether the event needs to be captured or not.
+
 4:this v?sar ? Event listener ? html element en ekki ? object. ?? getur nota? bind() til a? breyta ?v?. Leystu eftirfarandi k??ad?mi me? notkun ? bind() til a? birta ? console “My name is Sam“ en ekki undefined.
+
 let Person = {
   
   name: 'Sam',
@@ -19,3 +23,16 @@ let Person = {
 
 };
 buttonEl.addEventListener('click', Person.sayName);
+
+
+Answer
+
+var Person = {
+  name: 'Sam',
+  sayName: function(){
+    console.log('My name is '+ this.name);
+  }
+};
+document
+  .getElementById('test')
+  .addEventListener('click', Person.sayName.bind(Person));
