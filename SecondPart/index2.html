@@ -6,37 +6,6 @@
 <button id = sumbit>Result</button>
 <div id="result"></div>
 
-<style>
-	body{
-		font-size: 20px;
-		font-family: sans-serif;
-		color: #0033cc;
-	}
-	.question{
-		font-weight: 600;
-	}
-	.answer label{
-		margin-bottom: 20px;
-	}
-	.answers{
-		display: block;
-	}
-	.sumbit{
-	font-family: sans-serif;
-	font-size: 20px;
-	background-color: #271;
-	color: #fff;
-	border: 0px;
-	border-radius: 5px;
-	padding: 25px;
-	cursor: pointer;
-	margin-bottom: 25px;	
-	}
-	#sumbit:hover{
-		background-color: #36a;
-	}
-</style>
-
 <script>
 
 		(function(){
@@ -138,10 +107,40 @@
   
   buildQuiz();
 
-  
   submitButton.addEventListener('click', showResults);
 })();
 </script>
+
+<style>
+	body{
+		font-size: 20px;
+		font-family: sans-serif;
+		color: #333;
+	}
+	.question{
+		font-weight: 600;
+	}
+	.answer{
+		margin-bottom: 20px;
+	}
+	.answers label{
+		display: block;
+	}
+	.sumbit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #271;
+	color: #fff;
+	border: 0px;
+	border-radius: 5px;
+	padding: 25px;
+	cursor: pointer;
+	margin-bottom: 25px;	
+	}
+	#sumbit:hover{
+		background-color: #36a;
+	}
+</style>
 
 
 </body>
