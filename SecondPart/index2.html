@@ -2,9 +2,11 @@
 <html>
 <head>
 
-<div id ="quiz"></div>
-<button id = sumbit>Result</button>
-<div id="result"></div>
+<div id="quiz"></div>
+<button id="submit">Result</button>
+<div id="results"></div>
+
+
 
 <script>
 
@@ -112,37 +114,38 @@
 })();
 </script>
 
-<style>
-	body{
-		font-size: 20px;
-		font-family: sans-serif;
-		color: #333;
-	}
-	.question{
-		font-weight: 600;
-	}
-	.answer{
-		margin-bottom: 20px;
-	}
-	.answers label{
-		display: block;
-	}
-	.sumbit{
+
+
+<style >
+body{
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #333;
+}
+.question{
+	font-weight: 600;
+}
+.answers {
+  margin-bottom: 20px;
+}
+.answers label{
+  display: block;
+}
+#submit{
 	font-family: sans-serif;
 	font-size: 20px;
-	background-color: #271;
+	background-color: #279;
 	color: #fff;
 	border: 0px;
-	border-radius: 5px;
-	padding: 25px;
+	border-radius: 3px;
+	padding: 20px;
 	cursor: pointer;
-	margin-bottom: 25px;	
-	}
-	#sumbit:hover{
-		background-color: #36a;
-	}
+	margin-bottom: 20px;
+}
+#submit:hover{
+	background-color: #38a;
+}
 </style>
-
 
 </body>
 </html>
